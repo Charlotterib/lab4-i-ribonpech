@@ -1,0 +1,34 @@
+[2026-06-05T12:46:40.836+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2026-06-05T12:46:40.868+0000] {taskinstance.py:2613} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: lab4_starter.ingest scheduled__2026-06-04T00:00:00+00:00 [queued]>
+[2026-06-05T12:46:40.879+0000] {taskinstance.py:2613} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: lab4_starter.ingest scheduled__2026-06-04T00:00:00+00:00 [queued]>
+[2026-06-05T12:46:40.880+0000] {taskinstance.py:2866} INFO - Starting attempt 1 of 2
+[2026-06-05T12:46:40.895+0000] {taskinstance.py:2889} INFO - Executing <Task(_PythonDecoratedOperator): ingest> on 2026-06-04 00:00:00+00:00
+[2026-06-05T12:46:40.902+0000] {standard_task_runner.py:72} INFO - Started process 451 to run task
+[2026-06-05T12:46:40.904+0000] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', 'lab4_starter', 'ingest', 'scheduled__2026-06-04T00:00:00+00:00', '--job-id', '4', '--raw', '--subdir', 'DAGS_FOLDER/starter_pipeline.py', '--cfg-path', '/tmp/tmpfiffk89c']
+[2026-06-05T12:46:40.905+0000] {standard_task_runner.py:105} INFO - Job 4: Subtask ingest
+[2026-06-05T12:46:40.959+0000] {task_command.py:467} INFO - Running <TaskInstance: lab4_starter.ingest scheduled__2026-06-04T00:00:00+00:00 [running]> on host bb04fef1c565
+[2026-06-05T12:46:41.052+0000] {taskinstance.py:3132} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='lab4' AIRFLOW_CTX_DAG_ID='lab4_starter' AIRFLOW_CTX_TASK_ID='ingest' AIRFLOW_CTX_EXECUTION_DATE='2026-06-04T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2026-06-04T00:00:00+00:00'
+[2026-06-05T12:46:41.053+0000] {taskinstance.py:731} INFO - ::endgroup::
+[2026-06-05T12:46:41.081+0000] {python.py:240} INFO - Done. Returned value was: {'logical_date': '2026-06-04', 'raw_path': '/opt/***/data/raw/dt=2026-06-04/transactions.parquet', 'row_count': 200, 'amount_sum': 25032.140000000007}
+[2026-06-05T12:46:41.121+0000] {taskinstance.py:340} INFO - ::group::Post task execution logs
+[2026-06-05T12:46:41.121+0000] {taskinstance.py:352} INFO - Marking task as SUCCESS. dag_id=lab4_starter, task_id=ingest, run_id=scheduled__2026-06-04T00:00:00+00:00, execution_date=20260604T000000, start_date=20260605T124640, end_date=20260605T124641
+[2026-06-05T12:46:41.157+0000] {local_task_job_runner.py:266} INFO - Task exited with return code 0
+[2026-06-05T12:46:41.183+0000] {taskinstance.py:3895} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2026-06-05T12:46:41.184+0000] {local_task_job_runner.py:245} INFO - ::endgroup::
+[2026-06-05T12:55:37.444+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2026-06-05T12:55:37.474+0000] {taskinstance.py:2613} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: lab4_starter.ingest scheduled__2026-06-04T00:00:00+00:00 [queued]>
+[2026-06-05T12:55:37.485+0000] {taskinstance.py:2613} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: lab4_starter.ingest scheduled__2026-06-04T00:00:00+00:00 [queued]>
+[2026-06-05T12:55:37.486+0000] {taskinstance.py:2866} INFO - Starting attempt 1 of 2
+[2026-06-05T12:55:37.500+0000] {taskinstance.py:2889} INFO - Executing <Task(_PythonDecoratedOperator): ingest> on 2026-06-04 00:00:00+00:00
+[2026-06-05T12:55:37.506+0000] {standard_task_runner.py:72} INFO - Started process 157 to run task
+[2026-06-05T12:55:37.509+0000] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', 'lab4_starter', 'ingest', 'scheduled__2026-06-04T00:00:00+00:00', '--job-id', '14', '--raw', '--subdir', 'DAGS_FOLDER/starter_pipeline.py', '--cfg-path', '/tmp/tmpfb3wv7gr']
+[2026-06-05T12:55:37.510+0000] {standard_task_runner.py:105} INFO - Job 14: Subtask ingest
+[2026-06-05T12:55:37.571+0000] {task_command.py:467} INFO - Running <TaskInstance: lab4_starter.ingest scheduled__2026-06-04T00:00:00+00:00 [running]> on host 35aa88b37d6a
+[2026-06-05T12:55:37.664+0000] {taskinstance.py:3132} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='lab4' AIRFLOW_CTX_DAG_ID='lab4_starter' AIRFLOW_CTX_TASK_ID='ingest' AIRFLOW_CTX_EXECUTION_DATE='2026-06-04T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2026-06-04T00:00:00+00:00'
+[2026-06-05T12:55:37.665+0000] {taskinstance.py:731} INFO - ::endgroup::
+[2026-06-05T12:55:37.690+0000] {python.py:240} INFO - Done. Returned value was: {'logical_date': '2026-06-04', 'raw_path': '/opt/***/data/raw/dt=2026-06-04/transactions.parquet', 'row_count': 200, 'amount_sum': 25032.140000000007}
+[2026-06-05T12:55:37.731+0000] {taskinstance.py:340} INFO - ::group::Post task execution logs
+[2026-06-05T12:55:37.732+0000] {taskinstance.py:352} INFO - Marking task as SUCCESS. dag_id=lab4_starter, task_id=ingest, run_id=scheduled__2026-06-04T00:00:00+00:00, execution_date=20260604T000000, start_date=20260605T125537, end_date=20260605T125537
+[2026-06-05T12:55:37.761+0000] {local_task_job_runner.py:266} INFO - Task exited with return code 0
+[2026-06-05T12:55:37.788+0000] {taskinstance.py:3895} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2026-06-05T12:55:37.789+0000] {local_task_job_runner.py:245} INFO - ::endgroup::
